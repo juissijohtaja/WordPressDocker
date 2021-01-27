@@ -2,6 +2,8 @@
 
 Testing Docker compose and containers including WordPress CMS, MySql database and phpMyAdmin.
 
+This setup will retain uploaded content (images, files), installed and updated plugins and themes after restarting Docker.
+
 Start:
 docker-compose up -d
 
