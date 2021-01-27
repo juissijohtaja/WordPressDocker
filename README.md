@@ -10,6 +10,9 @@ docker-compose up -d
 Stop:
 docker-compose down
 
+Stop and delete volumes (WARNING!!! this will delete all files in containers):
+docker-compose down --volumes
+
 WordPress Site:
 http://localhost:8000/
 
