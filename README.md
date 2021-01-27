@@ -1,3 +1,3 @@
 # WordPress installation with Docker
 
-Including WordPress CMS, MySql database and phpMyAdmin
+Testing Docker compose and containers including WordPress CMS, MySql database and phpMyAdmin.
