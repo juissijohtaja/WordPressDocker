@@ -26,7 +26,7 @@ wp-snapshots/*
 !wp-content/plugins/CUSTOM_PLUGIN_1
 !wp-content/plugins/CUSTOM_PLUGIN_2 # etc.
 /wp-content/themes/*
-!wp-content/themes/CUSTOM_THEME_1
+!wp-content/themes/wpbootstrap
 !wp-content/themes/CUSTOM_THEME_2 # etc.
  
 # Ignore node dependency directories.
