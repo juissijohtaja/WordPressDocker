@@ -18,3 +18,7 @@ http://localhost:8000/wp-admin/
 
 phpMyAdmin:
 http://localhost:8080/
+
+Rest API route for blog posts:
+http://localhost:8000/?rest_route=/wp/v2/posts
+
