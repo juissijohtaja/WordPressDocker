@@ -8,4 +8,8 @@
 	<?php endwhile; wp_reset_query(); ?>
 </article>
 
+<?php
+	dynamic_sidebar( 'sidebar-1' )
+?>
+
 <?php get_footer(); ?>

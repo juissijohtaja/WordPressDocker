@@ -1,31 +1,16 @@
 <?php get_header(); ?>
 
-<?php 
-	query_posts('posts_per_page=1');
-	while(have_posts()) : the_post(); 
-?>
-<div class="jumbotron">
-<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-<p><?php the_excerpt(); ?></p>
-</div>
-<?php endwhile; wp_reset_query(); ?>
-
-
-<div class="panel panel-default panel-body">
-	<div class="row">
-		<div class="col-md-2">
-			<ul class="nav nav-pills nav-stacked">
-				<?php wp_list_categories('orderby=name&title_li='); ?>
-			</ul>
+<div class="container py-4">
+	<?php while(have_posts()) : the_post(); ?>
+		<div class="my-4 px-4 py-3 bg-light">
+			<img class='mr-3 img-fluid post-thumb d-md-flex' src='<?php the_post_thumbnail_url('thumbnail' ); ?>'/>
+			<p class='text-muted'><?php the_date(); ?>, <?php comments_number() ?></p>
+			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+			<p><?php the_excerpt(); ?></p>
+			<p><a href="<?php the_permalink(); ?>">Read more</a></p>
 		</div>
-		<div class="col-md-10">
-			<?php while(have_posts()) : the_post(); ?>
-				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-				<p><?php the_excerpt(); ?></p>
-				<p> posted by <?php the_author(); ?>
-			<?php endwhile; wp_reset_query(); ?>
-		</div>
-	</div>
-</div>
+	<?php endwhile; wp_reset_query(); ?>
+	<?php the_posts_pagination( ); ?>
+</div> 
 
 <?php get_footer(); ?>

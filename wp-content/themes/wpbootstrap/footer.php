@@ -11,6 +11,9 @@
 				));
 			?>
 		</div>
+		<?php
+			dynamic_sidebar( 'footer-1' )
+		?>
 	</div> 
 
 <?php wp_footer(); ?>

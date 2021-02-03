@@ -11,8 +11,8 @@
   </div>
 </header>
 <h1 class='mt-1 mb-4'><?php the_title(); ?></h1>
-<p class='mt-2 mb-1'><?php the_excerpt(); ?></p>
+<p class='mt-2 mb-1'><?php the_content(); ?></p>
 
-<div class='bg-dark px-3 py-4'>
+<div class='bg-light border rounded px-3 py-4'>
   <?php comments_template(); ?>
 </div>

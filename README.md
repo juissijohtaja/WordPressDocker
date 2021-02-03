@@ -25,3 +25,10 @@ http://localhost:8080/
 Rest API route for blog posts:
 http://localhost:8000/?rest_route=/wp/v2/posts
 
+### GCR
+?????
+google cloud run
+(gcloud config list)
+gcloud config set project jkwordpress
+gcloud builds submit --tag gcr.io/jkwordpress/jkwordpress
+gcloud run deploy --image gcr.io/jkwordpress/jkwordpress
